@@ -25,21 +25,21 @@ const ShowCase = () => {
    return (
       <div className="flex space-x-2 w-full">
 
-         <div style={{ width: '300px', height: '460px', position: 'relative', marginRight: '50px'}}>
-            <img style={{ }} src={products[0]?.url} alt={products[0]?.title} className="w-full h-full object-cover bg-blue-300" />
-            <div className="absolute bottom-0 right-0 bg-white text-black text-xs font-medium p-1 justify-items-end whitespace-nowrap"> 
+         <div style={{ width: '300px', height: '460px', position: 'relative', marginRight: '25px'}} className = "overflow-hidden whitespace-nowrap">
+            <img style={{}} src={products[0]?.url} alt={products[0]?.title} className="w-full h-full object-cover bg-blue-300" />
+            <div className="absolute bottom-0 right-0 bg-white text-black text-xs font-medium p-1 text-right"> 
                {products[0]?.title}
             </div>
          </div>
 
-         <div style={{ width: '300px', height: '460px' , position: 'relative', marginRight: '50px'}}>
-            <img style={{ }} src={products[1]?.url} alt={products[1]?.title} className="w-full h-full object-cover bg-blue-300" />
-            <div className="absolute bottom-0 right-0 bg-white text-black text-xs font-medium p-1 justify-items-end whitespace-nowrap ">
+         <div style={{ width: '300px', height: '460px' , position: 'relative', marginRight: '25px'}} className = "overflow-hidden whitespace-nowrap">
+            <img style={{}} src={products[1]?.url} alt={products[1]?.title} className="w-full h-full object-cover bg-blue-300" />
+            <div className="absolute bottom-0 right-0 bg-white text-black text-xs font-medium p-1 text-right">
                {products[1]?.title}
             </div>
          </div>
 
-         <div className="grid grid-cols-4 grid-rows-2 gap-x-2 w-full">
+         <div className="grid grid-cols-4 grid-rows-2 gap-x-2 w-full justify-items-end">
          {products.slice(2, 10).map((product, index) => (
                <div key={index} style={{ height: '230px', width: '200px', position: 'relative' }} className="border-black border-0">
                   <img style={{ height: '200px', width: '200px'}} src={product.url} alt={product.title} className="w-full h-full object-cover bg-blue-300" />
