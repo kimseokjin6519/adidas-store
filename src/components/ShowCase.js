@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 const ShowCase = () => {
-   const [products, setProducts] = useState([]);
-
+   
    useEffect(() => {
       const fetchProducts = async () => {
          try {
@@ -14,7 +13,6 @@ const ShowCase = () => {
             console.error('Error fetching product data:', error);
          }
       };
-
       fetchProducts();
    }, []);
 
@@ -22,19 +20,30 @@ const ShowCase = () => {
       return array.sort(() => Math.random() - 0.5);
    };
 
+   const [products, setProducts] = useState([]);
+
    return (
       <div className="flex space-x-5 w-full">
-         <div className="">
-            <img style={{ width: '300px' }} src={products[0]?.url} alt={products[0]?.title} className="w-full h-full object-cover bg-blue-300" />
+
+         <div style={{ width: '300px', height: '500px', position: 'relative' }}>
+            <img style={{ }} src={products[0]?.url} alt={products[0]?.title} className="w-full h-full object-cover bg-blue-300" />
+            <div className="absolute bottom-0 right-0 bg-white text-black text-xs font-medium p-1"> 
+               {products[0]?.title}
+            </div>
          </div>
-         <div className="">
-            <img style={{ width: '300px' }} src={products[1]?.url} alt={products[1]?.title} className="w-full h-full object-cover bg-blue-300" />
+
+         <div style={{ width: '300px', height: '500px' , position: 'relative'}}>
+            <img style={{ }} src={products[1]?.url} alt={products[1]?.title} className="w-full h-full object-cover bg-blue-300" />
+            <div className="absolute bottom-0 right-0 bg-white text-black text-xs font-medium p-1">
+               {products[1]?.title}
+            </div>
          </div>
-         <div className="grid grid-cols-4 grid-rows-2 gap-2 ml-5">
+
+         <div className="grid grid-cols-4 grid-rows-2 gap-x-5">
             {products.slice(2, 10).map((product, index) => (
-               <div key={index} style = {{height: '250px', width: '250px'}} className="border-black border-1 relative">
-                  <img style= {{ height: '200px', width: '200px' }} src={product.url} alt={product.title} className="w-full h-full object-cover bg-red-300" />
-                  <div style= {{ width: '200px' }} className="bottom-0 left-0 bg-white text-black text-xs font-medium pt-2">
+               <div key={index} style={{ height: '250px', width: '200px', position: 'relative' }} className="border-black border-0">
+                  <img style={{ height: '225px', width: '200px'}} src={product.url} alt={product.title} className="w-full h-full object-cover bg-blue-300" />
+                  <div  style={{ width: '200px' }} className="absolute bottom-1 left-0 bg-white text-black text-xs font-medium pt-0 overflow-hidden whitespace-nowrap">
                      {product.title}
                   </div>
                </div>
