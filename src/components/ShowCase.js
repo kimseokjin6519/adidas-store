@@ -25,14 +25,14 @@ const ShowCase = () => {
    return (
       <div className="flex space-x-5 w-full">
 
-         <div style={{ width: '300px', height: '500px', position: 'relative' }}>
+         <div style={{ width: '300px', height: '460px', position: 'relative' }}>
             <img style={{ }} src={products[0]?.url} alt={products[0]?.title} className="w-full h-full object-cover bg-blue-300" />
             <div className="absolute bottom-0 right-0 bg-white text-black text-xs font-medium p-1"> 
                {products[0]?.title}
             </div>
          </div>
 
-         <div style={{ width: '300px', height: '500px' , position: 'relative'}}>
+         <div style={{ width: '300px', height: '460px' , position: 'relative'}}>
             <img style={{ }} src={products[1]?.url} alt={products[1]?.title} className="w-full h-full object-cover bg-blue-300" />
             <div className="absolute bottom-0 right-0 bg-white text-black text-xs font-medium p-1">
                {products[1]?.title}
@@ -41,9 +41,9 @@ const ShowCase = () => {
 
          <div className="grid grid-cols-4 grid-rows-2 gap-x-5">
             {products.slice(2, 10).map((product, index) => (
-               <div key={index} style={{ height: '250px', width: '200px', position: 'relative' }} className="border-black border-0">
-                  <img style={{ height: '225px', width: '200px'}} src={product.url} alt={product.title} className="w-full h-full object-cover bg-blue-300" />
-                  <div  style={{ width: '200px' }} className="absolute bottom-1 left-0 bg-white text-black text-xs font-medium pt-0 overflow-hidden whitespace-nowrap">
+               <div key={index} style={{ height: '230px', width: '200px', position: 'relative' }} className="border-black border-0">
+                  <img style={{ height: '200px', width: '200px'}} src={product.url} alt={product.title} className="w-full h-full object-cover bg-blue-300" />
+                  <div  style={{ width: '200px' }} className="absolute bottom-0 left-0 bg-white text-black text-xs font-medium p-1 overflow-hidden whitespace-nowrap">
                      {product.title}
                   </div>
                </div>
