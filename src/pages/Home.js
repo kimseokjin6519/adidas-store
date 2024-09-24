@@ -28,7 +28,7 @@ function Home() {
                <img src={Splash} alt="Splash"  style={{width: '100%', height: '100%', objectFit: 'fit' }}  />
             </div>
 
-            <div className = "mt-10 ml-5">
+            <div className = "mt-5 ml-5">
                <ShowCase />
             </div>
 
