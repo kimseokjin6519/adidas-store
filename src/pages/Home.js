@@ -32,7 +32,6 @@ function Home() {
                <ShowCase />
             </div>
 
-
             <div className="text-center text-black">
                <strong className="block text-lg"></strong>
                <span className="block pt-5 text-3xl font-bold" style={{ fontFamily: '' }}></span>
