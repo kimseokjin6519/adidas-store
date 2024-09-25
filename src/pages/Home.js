@@ -25,7 +25,7 @@ function Home() {
          </div>
          <div className="w-full bg-white flex-col items-center justify-center" style = {{paddingTop: '55px'}}>    
             <div className="h-full bg-gray-400">
-               <img src={Splash} alt="Splash"  style={{width: '100%', height: '100%', objectFit: 'fit' }}  />
+               <img src={Splash} alt="Splash"  style={{width: '100%', height: '100%', objectFit: 'fit' }} />
             </div>
             <div className = "mt-5 ml-5 mb-20">
                <ShowCase />

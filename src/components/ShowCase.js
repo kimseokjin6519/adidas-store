@@ -39,14 +39,14 @@ const ShowCase = () => {
 
    return (
       <div className="flex space-x-2 w-full">
-         <div style={{ width: '300px', height: '460px', position: 'relative', marginRight: '25px'}} className = "overflow-hidden whitespace-nowrap">
+         <div style={{ width: '300px', height: '460px', position: 'relative', marginRight: '25px'}} className = "shadow-md overflow-hidden whitespace-nowrap">
             <img style={{}} src={products[0]?.url} alt={products[0]?.title} className="w-full h-full object-cover" />
             <div>{SVGHeart}</div>
             <div className="absolute bottom-0 right-0 bg-white text-black text-xs font-medium p-1 text-right"> 
                {products[0]?.title}
             </div>
          </div>
-         <div style={{ width: '300px', height: '460px' , position: 'relative', marginRight: '25px'}} className = "overflow-hidden whitespace-nowrap">
+         <div style={{ width: '300px', height: '460px' , position: 'relative', marginRight: '25px'}} className = "shadow-md overflow-hidden whitespace-nowrap">
             <img style={{}} src={products[1]?.url} alt={products[1]?.title} className="w-full h-full object-cover" />
             <div>{SVGHeart}</div>
             <div className="absolute bottom-0 right-0 bg-white text-black text-xs font-medium p-1 text-right">
@@ -56,9 +56,9 @@ const ShowCase = () => {
          <div className="grid grid-cols-4 grid-rows-2 gap-x-2 w-full justify-items-end">
          {products.slice(2, 10).map((product, index) => (
                <div key={index} style={{ height: '230px', width: '200px', position: 'relative' }} className="border-black border-0">
-                  <img style={{ height: '200px', width: '200px'}} src={product.url} alt={product.title} className="w-full h-full object-cover bg-blue-300" />
+                  <img style={{ height: '200px', width: '200px'}} src={product.url} alt={product.title} className="shadow-md w-full h-full object-cover bg-blue-300" />
                   <div>{SVGHeart}</div>                  
-                  <div  style={{ width: '200px' }} className="absolute bottom-0 left-0 bg-white text-black text-xs font-medium p-1 overflow-hidden whitespace-nowrap">
+                  <div style={{ width: '200px' }} className="absolute bottom-0 left-0 bg-white text-black text-xs font-medium p-1 overflow-hidden whitespace-nowrap">
                      {product.title}
                   </div>
                </div>
