@@ -33,7 +33,7 @@ function Home() {
             <div style = {{ backgroundColor: '#FFC107' }} className = "border-t border-black h-10 w-full"></div>
             <div style = {{ gap: '150px'}} className="w-full bg-white flex justify-center pt-10 mb-10 text-base font-medium">
                <div>Collegiate</div>
-               <div>Fall Althletics</div>
+               <div>Fall Athletics</div>
                <div>Stay Dry</div>
                <div>Keep Warm</div>
             </div>
