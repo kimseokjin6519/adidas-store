@@ -5,6 +5,7 @@ import ShowCase from '../components/ShowCase';
 
 function Home() {
    return (
+      
       <div className="w-full min-h-screen flex flex-col items-center">
          <div className="w-full bg-white flex justify-center items-center fixed z-10" style = {{height: '55px'}}>
             <img src={AdidasLogo} alt="Adidas Logo" style={{ position: 'absolute', left: '10px', height: '55px', width: 'auto', paddingTop: '5px' }} />
@@ -30,12 +31,12 @@ function Home() {
             <div className = "mt-5 ml-5 mb-20">
                <ShowCase />
             </div>
-            <div style = {{ backgroundColor: '#F7CBAA' }} className = "border-b border-black h-5 w-full"></div>
-            <div style = {{ gap: '150px'}} className="w-full bg-white flex justify-center pt-10 mb-10 text-base font-medium">
-               <div>Collegiate</div>
-               <div>Fall Athletics</div>
-               <div>Stay Dry</div>
-               <div>Keep Warm</div>
+            <div style = {{ backgroundColor: 'yellow' }} className = "border-b border-black h-5 w-full"></div>
+            <div style = {{ gap: '150px'}} className="w-full bg-white flex justify-center pt-10 mb-10 text-sm font-medium">
+               <div>COLLEGIATE</div>
+               <div>FALL ATHLETICS</div>
+               <div>STAY DRY</div>
+               <div>KEEP WARM</div>
             </div>
             <div style={{ backgroundColor: '#23211b' }} className = "flex items-center justify-center text-center bg-gray-900 h-10 text-white text-xs w-full" >© 2024 adidas America, Inc.</div>
          </div>
