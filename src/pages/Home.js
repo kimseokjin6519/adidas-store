@@ -7,15 +7,15 @@ function Home() {
    return (
       <div className="w-full min-h-screen flex flex-col items-center">
          <div className="w-full bg-white flex justify-center items-center fixed z-10" style = {{height: '55px'}}>
-            <img src={AdidasLogo} alt="Adidas Logo" style={{ position: 'absolute', left: '10px', height: '55px', width: 'auto' }} />
+            <img src={AdidasLogo} alt="Adidas Logo" style={{ position: 'absolute', left: '10px', height: '55px', width: 'auto', paddingTop: '5px' }} />
             <div className="flex justify-center items-center h-full" style = {{height: '55px'}}>
-               <span className="w-full bg-white flex justify-center gap-5 pt-2 pl-5 text-base font-semibold">
+               <div className="w-full bg-white flex justify-center gap-5 pt-3 ml-5 text-base font-semibold">
                   <div>Men</div>
                   <div>Women</div>
                   <div>Kids</div>
                   <div>Sale</div>
                   <div>New</div>
-               </span>
+               </div>
             </div>
             <div style = {{ position: 'absolute', right: '70px', marginTop: '10px' }}>
                <input type="text" placeholder="Search" className="box-border rounded-xl w-3/4 focus:outline-none text-sm bg-gray-200 border-gray-500 border pl-2" />
@@ -30,7 +30,7 @@ function Home() {
             <div className = "mt-5 ml-5 mb-20">
                <ShowCase />
             </div>
-            <div style = {{ backgroundColor: '#FFC107' }} className = "border-t border-black h-10 w-full"></div>
+            <div style = {{ backgroundColor: '#F7CBAA' }} className = "border-b border-black h-5 w-full"></div>
             <div style = {{ gap: '150px'}} className="w-full bg-white flex justify-center pt-10 mb-10 text-base font-medium">
                <div>Collegiate</div>
                <div>Fall Athletics</div>
