@@ -3,10 +3,15 @@ import AdidasLogo from '../assets/images/adidas-logo.png';
 import Splash from '../assets/images/splash.png';
 import ShowCase from '../components/ShowCase';
 import { MyWishListHeaderIcon, MyCartHeaderIcon } from '../components/MyWishList';
+import { useNavigate } from 'react-router-dom';
 
-function Home() {
+const Home = ({ wishlist, setWishlist }) => {
 
-   const [wishlist, setWishlist] = useState([]);
+   const navigate = useNavigate();
+   
+   const handleWishListHeaderIconClick = () => {
+      navigate('/wishlist', { state: { wishlist } }); 
+  };
 
    return (
       
@@ -25,7 +30,7 @@ function Home() {
             </div>   
             <div style = {{ position: 'absolute', right: '20px', marginTop: '12px' }} className = "flex gap-3">
                <input type="text" placeholder="검색" className="box-border rounded-sm w-2/3 focus:outline-none text-sm font-semibold bg-gray-200 border-gray-500 border pl-2" />               
-               <MyWishListHeaderIcon />
+               <div onClick={handleWishListHeaderIconClick}><MyWishListHeaderIcon wishlist={wishlist}/></div>
                <MyCartHeaderIcon />
             </div>
          </div>
