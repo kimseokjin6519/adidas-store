@@ -22,16 +22,15 @@ const ShowCase = ({ wishlist, setWishlist }) => {
 
    const [products, setProducts] = useState([]);
 
-
-   const addToWishlist = (id) => {
-      console.log('click');
-       if (!wishlist.includes(id)) {
-           setWishlist((prevWishlist) => [...prevWishlist, id]);
-           console.log(`Added to wishlist: ${id}`);
-       } else {
-           console.log(`Already in wishlist: ${id}`);
-       }
-   };
+   const addToWishlist = (id) => {  
+      if (wishlist.includes(id)) {
+          setWishlist((prevWishlist) => prevWishlist.filter(itemId => itemId !== id));
+          console.log(`Removed from wishlist: ${id}`);
+      } else {
+          setWishlist((prevWishlist) => [...prevWishlist, id]);
+          console.log(`Added to wishlist: ${id}`);
+      }
+  };
 
    return (
       <div className="flex space-x-2 w-full">
