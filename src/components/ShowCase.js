@@ -27,14 +27,14 @@ const ShowCase = () => {
          <div style={{ width: '300px', height: '480px', position: 'relative', marginRight: '25px'}} className = "shadow-md overflow-hidden whitespace-nowrap">
             <img style={{}} src={products[0]?.url} alt={products[0]?.title} className="w-full h-full object-cover" />
             <div><MyWishList/></div>
-            <div className="absolute bottom-0 right-0 bg-white text-black text-xs font-medium p-1 text-right"> 
+            <div className="absolute bottom-0 right-0 bg-white text-black text-xs font-semibold p-1 text-right"> 
                {products[0]?.title}
             </div>
          </div>
          <div style={{ width: '300px', height: '480px' , position: 'relative', marginRight: '25px'}} className = "shadow-md overflow-hidden whitespace-nowrap">
             <img style={{}} src={products[1]?.url} alt={products[1]?.title} className="w-full h-full object-cover" />
             <div><MyWishList/></div>
-            <div className="absolute bottom-0 right-0 bg-white text-black text-xs font-medium p-1 text-right">
+            <div className="absolute bottom-0 right-0 bg-white text-black text-xs font-semibold p-1 text-right">
                {products[1]?.title}
             </div>
          </div>
@@ -43,9 +43,7 @@ const ShowCase = () => {
                <div key={index} style={{ height: '230px', width: '200px', position: 'relative' }} className="border-black border-0">
                   <img style={{ height: '230px', width: 'auto'}} src={product.url} alt={product.title} className="shadow-md w-full h-full object-cover bg-blue-300" />
                   <div><MyWishList/></div>                  
-                  <div style={{ width: '200px', right: '0', bottom: '0px', padding: '' }}
-        className="absolute bg-white text-black text-xs text-right font-medium p-1 overflow-hidden whitespace-nowrap"
-      >
+                  <div style={{ width: '200px', right: '0', bottom: '0px', padding: '' }} className="absolute bg-white text-black text-xs text-right font-semibold p-1 overflow-hidden whitespace-nowrap">
                      {product.title}
                   </div>
                </div>
