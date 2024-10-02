@@ -6,20 +6,19 @@ const WishList = () => {
     const wishlist = location.state?.wishlist || []; // Assuming each item is an object
 
     return (
-        <div className="p-5 bg-gray-100 min-h-screen">
-            <h2 className="mb-5 text-3xl font-bold">My Wishlist</h2>
-            <p className="mb-5 text-lg text-gray-700">{wishlist.length} ITEMS</p>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="p-5 bg-white min-h-screen">
+            <div className="mb-5 text-xl font-semibold">내 위시리스트</div>
+            <div className="mb-10 text-sm font-medium text-gray-700">{wishlist.length} 개 아이템</div>
+
+            <div className="grid grid-cols-4 grid-rows-2 gap-x-10 gap-y-10 w-full justify-items-center">
                 {wishlist.length > 0 ? (
-                    wishlist.map(item => (
-                        <div key={item._id} className="bg-white rounded-lg shadow-lg p-4">
-                            <img src={item.url} alt={item.title} className="w-full h-40 object-cover rounded-md mb-3" />
-                            <h3 className="text-lg font-semibold">{item.title}</h3>
-                            <p className="text-xl font-bold text-gray-800">${item.price}</p>
-                            <button className="mt-2 bg-red-500 text-white py-1 px-3 rounded hover:bg-red-600 transition-colors">
-                                Remove from Wishlist
-                            </button>
-                        </div>
+                    wishlist.map(product => (
+                     <div key={product._id} style={{ height: '230px', width: '200px', position: 'relative' }} className="border-black border-0">
+                  <img style={{ height: '230px', width: 'auto'}} src={product.url} alt={product.title} className="shadow-md w-full h-full object-cover bg-blue-300" />
+                  <div style={{ width: '200px', right: '0', bottom: '0px', padding: '' }} className="absolute bg-white text-black text-xs text-right font-semibold p-1 overflow-hidden whitespace-nowrap">
+                     {product.title}
+                  </div>
+               </div>
                     ))
                 ) : (
                     <li className="italic text-gray-600">Your wishlist is empty.</li>
