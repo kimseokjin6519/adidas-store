@@ -34,7 +34,7 @@ const ShowCase = ({ wishlist, setWishlist }) => {
   };
 
    return (
-      <div className="flex space-x-2 w-full">
+      <div className="flex space-x-2 w-full z-100">
          <div style={{ width: '300px', height: '480px', position: 'relative', marginRight: '25px'}} className = "shadow-md overflow-hidden whitespace-nowrap">
             <img style={{}} src={products[0]?.url} alt={products[0]?.title} className="w-full h-full object-cover" />
             <div onClick={() => {addToWishlist(products[0])}}><MyWishListIcon isToggled={wishlist.some(item => item._id === products[0]?._id)} /></div>
