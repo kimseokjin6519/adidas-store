@@ -17,18 +17,15 @@ const Home = ({ wishlist, setWishlist }) => {
    return (
       <div className="w-full min-h-screen flex flex-col items-center">
          
-         {/* Top Content - Black Fill */}
-         <div className="w-full fixed top h-[40px] z-10 bg-black text-white"></div>
-         
-         {/* Top Content @ 40px - Main Menu */}
-         <div className="w-full fixed top-[40px] h-[80px] bg-white flex z-10 border-b border-black shadow-md">
+         {/* Top Content - Main Menu */}
+         <div className="w-full fixed top-[0px] h-[60px] bg-white flex z-10 border-b border-black shadow-md">
 
-            {/* Top Content @ 40px - 1/3 */}
-            <div className="flex w-1/3 justify-start items-center">
-               <img src={AdidasLogo} alt="Adidas Logo" className="h-[60px] ml-10"/>
+            {/* Top Content */}
+            <div className="flex w-1/3 justify-start items-end">
+               <img src={AdidasLogo} alt="Adidas Logo" className="h-[50px] ml-8"/>
             </div>
 
-            {/* Top Content @ 40px - 2/3 */}
+            {/* Top Content */}
             <div className="flex w-1/3 justify-center items-center bg-white flex justify-center gap-4 text-base font-semibold tracking-tighter">
                <div>남성</div>
                <div>여성</div>
