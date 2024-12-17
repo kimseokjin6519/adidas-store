@@ -14,6 +14,6 @@ export const MyCartHeaderIcon = () => {
 };
 export const MyWishListIcon = ({ isToggled }) => {
    return ( 
-      <img src={AdidasON} alt="Adidas ON" className="absolute top-0 right-0 h-6 cursor-pointer z-10 border-gray-200 border-b-2 border-l-2" />
+      <img src={AdidasON} alt="Adidas ON" className="absolute top-0 right-0 w-10 cursor-pointer z-10 border-gray-400 border-b-[1px] border-l-[1px]" />
    );
 };
