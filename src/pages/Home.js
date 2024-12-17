@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import AdidasLogo from '../assets/images/adidas-logo.png';
 import Splash from '../assets/images/splash.png';
 import ShowCase from '../components/ShowCase';
+
 import { useNavigate } from 'react-router-dom';
 import { MyWishListHeaderIcon, MyCartHeaderIcon } from '../components/MyWishList';
 
@@ -50,24 +51,20 @@ const Home = ({ wishlist, setWishlist }) => {
          </div>
 
          {/* Showcase # 1 */}
-         <div className = "mt-5 ml-5 mb-20">
+         <div className = "mt-5 ml-5 mb-10">
             <ShowCase wishlist={wishlist} setWishlist={setWishlist} />
          </div>
 
          {/* Showcase # 2 */}
          <div className="flex flex-col w-full">
-            <div style = {{ backgroundColor: '#E5AE89', boxShadow: '0px 0px 4px rgba(0, 0, 0, 0.25)' }} className = "border-t border-black w-full h-5 w-full"></div>
-            <div style = {{ }} className="w-full gap-20 bg-white flex justify-center pt-10 mb-10 text-base font-semibold">
-               <div>대학 스타일</div>
-               <div>가을 운동</div>
-               <div>건조 유지</div>
-               <div>따뜻하게 유지</div>
-            </div>
+            <div style = {{ }} className="w-full gap-20 bg-white flex justify-center pt-10 mb-10 text-2xl font-semibold "></div>
          </div>
 
          {/* Base Banner */}
-         <div className="flex w-full">
-            <div style={{ backgroundColor: '#292B31' }} className = "flex items-center justify-center text-center bg-gray-900 h-10 text-white text-xs w-full" >2024 아디다스 아메리카, Inc.
+         <div className="flex flex-col w-full h-full">
+            <img src="" className="border-black border-[1px] shadow-lg"/>
+            <div className="h-4 w-full"></div>
+            <div style={{ backgroundColor: '#292B31' }} className = "flex items-center justify-center text-center bg-gray-900 h-10 text-white text-xs w-full mb-20" >2024 아디다스 아메리카, Inc.
             </div>
          </div>
 
