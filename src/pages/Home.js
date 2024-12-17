@@ -20,12 +20,12 @@ const Home = ({ wishlist, setWishlist }) => {
          {/* Top Content - Main Menu */}
          <div className="w-full fixed top-[0px] h-[60px] bg-white flex z-10 border-b border-black shadow-md">
 
-            {/* Top Content */}
+            {/* Top Content 1/3 */}
             <div className="flex w-1/3 justify-start items-end">
                <img src={AdidasLogo} alt="Adidas Logo" className="h-[50px] ml-8"/>
             </div>
 
-            {/* Top Content */}
+            {/* Top Content 2/3 */}
             <div className="flex w-1/3 justify-center items-center bg-white flex justify-center gap-4 text-base font-semibold tracking-tighter">
                <div>남성</div>
                <div>여성</div>
@@ -34,7 +34,7 @@ const Home = ({ wishlist, setWishlist }) => {
                <div>신제품</div>
             </div>
                 
-            {/* Top Content @ 40px - 3/3 */}
+            {/* Top Content 3/3 */}
             <div className="flex w-1/3 justify-end items-center">    
                <input type="text" placeholder="검색" className="pl-2 w-48 mr-6 box-border rounded-lg focus:outline-none text-sm font-semibold bg-gray-200 border-gray-500 border" />               
                <div className="mr-2" onClick={handleWishListHeaderIconClick}><MyWishListHeaderIcon wishlist={wishlist}/></div>
@@ -42,7 +42,7 @@ const Home = ({ wishlist, setWishlist }) => {
             </div>
          </div>
 
-         {/* Main Campaign */}
+         {/* Main Campaign Splash */}
          <div className="w-full bg-white flex-col items-center justify-center" style = {{paddingTop: '60px'}}>    
             <div className="h-full bg-gray-400">
                <img src={Splash} alt="Splash"  style={{width: '100%', height: '100%', objectFit: 'fit' }} />
